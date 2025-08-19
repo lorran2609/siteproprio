@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio lorran</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Exo+2:wght@300;400;500;600;700&family=Audiowide&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("Hyv2hR0CpLJpj2PLK");
+        })();
+    </script>
+
+
+</head>
+<body>
+    <canvas id="neural-bg"></canvas>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo-container">
+                <span class="logo-text">LORRAN</span>
+            </a>
+            
+            <div class="mobile-menu-toggle" id="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#home">INICIO</a></li>
+                    <li><a href="#about">SOBRE</a></li>
+                    <li><a href="#projects">PROJETOS</a></li>
+                    <li><a href="#skills">HABILIDADES</a></li>
+                    <li><a href="#contact">CONTATO</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="LORRAN MOREIRA">LORRAN MOREIRA</h1>
+            <p class="subtitle">Desenvolvedor full stack</p>
+        </div>
+        <a href="#about" class="scroll-btn">
+            <div class="scroll-btn-inner">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+                </svg>
+            </div>
+        </a>
+    </section>
+
+    <section id="about" class="fade-in">
+        <h2 class="section-title">SOBRE MIM</h2>
+        <div class="about-container">
+            <div class="about-image">
+                <div class="profile-img-wrapper">
+                    <div class="profile-img">
+                        <span>LGM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content">
+                <h3>Desenvolvendo novas ideias!</h3>
+                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px;">
+                    Técnico em Desenvolvimento de Sistemas e estudante de CyberSegurança
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
+                    Com 3 anos de experiencia em desenvolvimento de software, já desenvolvi dezenas de sistemas, incluindo sites, 
+                    aplicativos e outros tipos de aplicações mobile e para desktop
+                </p>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">+25</div>
+                        <div class="stat-label">Projetos</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label">Anos de experiência</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">30+</div>
+                        <div class="stat-label">Clientes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="fade-in">
+        <h2 class="section-title">PROJETOS</h2>
+        <div class="projects-grid">
+            <div class="glass-card project-card">
+                <h3 style="color: var(--primary);">IntelliCall</h3>
+                <p style="color: var(--text-secondary);">Projeto de software que realiza chamadas em sala de aula integrado com câmeras de segurança </p>
+            </div>
+            <div class="glass-card project-card">
+                <h3 style="color: var(--secondary);">Quiz SENAI</h3>
+                <p style="color: var(--text-secondary);">Uma interface experimental de um quiz vocacional que desenvolvi para o SENAI</p>
+            </div>
+            <div class="glass-card project-card">
+                <h3 style="color: var(--accent);">Estoque Enfeite</h3>
+                <p style="color: var(--text-secondary);">Sistema de Estoque desenvolvido em python para uma joalheria</p>
+            </div>
+            <div class="glass-card project-card">
+                <h3 style="color: var(--primary);">AcolheFood</h3>
+                <p style="color: var(--text-secondary);">Site desenvolvido e PHP para um projeto da minha escola para inclusão social de pessoas com seletividade alimentar</p>
+            </div>
+    </section>
+
+    <section id="skills" class="fade-in">
+        <h2 class="section-title">HABILIDADES</h2>
+        <div class="skills-container">
+            <div class="skill-node">
+                <span>HTML5</span>
+            </div>
+            <div class="skill-node">
+                <span>CSS3</span>
+            </div>
+            <div class="skill-node">
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-node">
+                <span>C#</span>
+            </div>
+            <div class="skill-node">
+                <span>Python</span>
+            </div>
+            <div class="skill-node">
+                <span>PHP</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <h2 class="section-title">CONTATO</h2>
+        <form id="contact-form" class="contact-form glass-card">
+            <div class="form-group">
+                <input type="text" name="user_name" placeholder="Nome" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="user_email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" rows="5" placeholder="Mensagem" required></textarea>
+            </div>
+            <button type="submit" class="neural-btn">ENVIAR</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Navegação</h3>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#projects">Projeto</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Serviços</h3>
+                <ul>
+                    <li><a href="#">Desenvolvimento Web</a></li>
+                    <li><a href="#">Desenvolvimento UI/UX</a></li>
+                    <li><a href="#">Desenvolvimento Backend</a></li>
+                    <li><a href="#">Análise e Desenvolvimento de Sistemas</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Conectar</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 10px;">
+                    Vamos desenvolver algo juntos!
+                </p>
+                <div class="social-links">
+                    <a href="https://www.github.com/lorran2609" aria-label="GitHub">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12"/>
+                        </svg>
+                    </a>
+                    <a href="https://br.linkedin.com/in/lorran-gomes-moreira-1429b0332" aria-label="LinkedIn">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Portifolio de apresentação. Todos os direitos reservados. <a href="https://www.github.com/lorran2609" rel="nofollow noopener">Github</a></p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+
+</body>
+</html>
